@@ -1,0 +1,225 @@
+.navbar-brand{
+    color:tomato;
+    font-family: math;
+    font-weight:600;
+}
+.logo-second-text{
+    color:cyan;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+
+    font-weight:900;
+    font-style:italic;
+    color:pink;
+    padding:0px 20px 0px 20px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 2px 20px 2px 20px;
+    color: white;
+    margin-top:10px;
+}
+@media (min-width:300px) and (max-width:991px){
+    .collapse .navbar-nav .nav-item .nav-link{
+        margin-top: 20px;
+        color:white;
+        text-align: center;
+    }
+    
+}
+.header-navbar .navbar-expand-lg{
+    background-color:darkblue!important;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+
+}
+.navbar-toggler{
+    color:white;
+    background-color:rgb(2, 0, 0);
+}
+.navbar-nav .nav-item a{
+    font-family:"Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.accordion-button {
+    color:white;
+    font-weight:600;
+    font-family:"Style Script", cursive;
+    font-size:25px;
+}
+li{
+
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-decoration-style: none;
+   list-style-type: none;
+   font-weight: 500;
+}
+.carousel-inner img{
+
+     width:100%;
+}
+
+.style-script-regular, h1, h3{
+    font-family: "Style Script", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+ .accordion .accordion-button{
+     background-color:darkorange;
+ }
+ 
+ .img-our-team img{
+     border-radius: 100%; 
+     height: 50vh;
+     border:4px solid #01060a;
+ }
+
+
+ .body{
+   background-color: #fff;
+   padding:15px 15px;
+   border-radius: 10px;
+ }
+ 
+ .model{
+   background-color: #e7e9eb;
+ }
+
+.footer-option{
+  background-color: rgb(170, 25, 192);
+  color:rgb(191, 199, 197);
+  padding: 30px 0;
+}
+
+.service-option li:hover{
+      color:white;
+      cursor:pointer;
+      font-size: 15px;
+      
+}
+.contact-option li:hover{
+    color:white;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.offices-option li:hover{
+  color:white;
+  cursor:pointer;
+  font-size: 15px;
+}
+
+.logo-option img{
+    width: 200px;
+    height:200px;
+    border-radius: 100%;
+    border:2px solid white;
+    padding:5px 5px;
+}
+
+.logo-option img:hover{
+    opacity: 0.5;
+    animation-delay: 2s;
+    cursor:pointer;
+}
+
+.last-point{
+
+    background-color: #88049c;
+}
+
+.details-option li{
+     line-height: 1.2rem;
+}
+.accordion-body ul li strong{
+     font-weight:400;
+}
+
+.img-manatent img{
+  border-radius:100%;
+  /* border:solid 20px black; */
+    box-shadow: 0.5rem 0.5rem rgb(47, 75, 233), -0.5rem -0.5rem #ebda1d;
+}
+
+.contact-img{
+    border-radius:100%;
+    transition: width 2s, height 2s, transform 2s
+}
+.contact-img:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    cursor:pointer;
+    transition-duration: 4s;
+    border-radius: 0px;
+}
+
+.contact-item i{
+   font-size:20px;
+   border:2px solid black;
+   border-radius: 100%;
+   padding:10px;
+}
+.contact-head .contact-img{
+     border:2px solid rgb(11, 2, 2);
+     border-radius: 100%;
+     padding:10px 10px;
+
+}
+.contact-item i:hover{
+    color:red;
+    background-color: pink;
+}
+.pdf-button{
+     border-radius: 20px;
+     border:none;
+     background-color: #0d6efd;
+     color:white;
+     font-weight:600;
+     padding:4px 0px;
+}
+.chapterwise-button{
+    margin-top:10px;
+    border-radius: 20px;
+     border:none;
+     background-color: #0d6efd;
+     color:white;
+     font-weight:600; 
+     padding: 4px 13px;
+}
+.observe-heading{
+    color:#a5aeb8;
+}
+.observe-data .col-lg-3 div{
+    margin-bottom: 22px;
+}
+.observe-data .col-lg-3 h5{
+    font-weight:600;
+}
+.row ,.cources-items{
+    padding-bottom:40px;
+}
+.cources-items .cources-item{
+      border:3px solid white;
+      background-color:#a5aeb8;
+}
+.cources-item img{
+    /* transition: width 3s; */
+    /* transition-delay: 1s; */
+    /* transition: width 2s, height 2s, transform 2s; */
+}
+.cources-item img:hover{
+    transition-timing-function: ease-in-out;
+    border-radius:100%;
+    border:2px solid white;
+    transition-duration: 3s;
+    padding:10px;
+    cursor:pointer;
+}
+.slider-paragraph{
+    font-weight: 900;
+}
