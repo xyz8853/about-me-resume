@@ -46,8 +46,7 @@
 
 .accordion-button {
     color:white;
-    font-weight:600;
-    font-family:"Style Script", cursive;
+    font-family:'cursive';
     font-size:25px;
 }
 li{
@@ -63,19 +62,29 @@ li{
 }
 
 .style-script-regular, h1, h3{
-    font-family: "Style Script", cursive;
+    font-family:cursive;
     font-weight: 600;
     font-style: normal;
   }
 
  .accordion .accordion-button{
-     background-color:darkorange;
+     background-color:darkblue;
+     height:30px;
+     font-size:22px;
+     border:none;
  }
  
  .img-our-team img{
      border-radius: 100%; 
      height: 50vh;
      border:4px solid #01060a;
+ }
+
+ @media (min-width:768px) and (max-width:1024px){
+    .img-our-team img{
+        width: 100%;
+        height: 100%;
+    }
  }
 
 
@@ -170,6 +179,11 @@ li{
      padding:10px 10px;
 
 }
+@media (min-width:250px) and (max-width:400px){
+    .contact-head .contact-img{
+        width:200px;
+    }
+}
 .contact-item i:hover{
     color:red;
     background-color: pink;
@@ -201,7 +215,7 @@ li{
     font-weight:600;
 }
 .row ,.cources-items{
-    padding-bottom:40px;
+    padding-bottom:10px;
 }
 .cources-items .cources-item{
       border:3px solid white;
@@ -214,17 +228,66 @@ li{
 }
 .cources-item img:hover{
     transition-timing-function: ease-in-out;
-    border-radius:100%;
+    border-radius:30px;
     border:2px solid white;
-    transition-duration: 3s;
+    transition-duration: .35s;
     padding:10px;
     cursor:pointer;
 }
 .slider-paragraph{
     font-weight: 900;
 }
-@media (min-width:300px) and (max-width:400px){
-    .contact-head .contact-img{
-        width:180px;
-    }
+.edu-qualification ul li a{
+    text-decoration:none;
+}
+.edu-qualification ul li h5{
+    border-radius:20px;
+    background-color:darkblue;
+    font-size: 18px;
+    padding: 5px 0px;
+    font-family: inherit;
+    transition:all 1s;
+    color:lightgoldenrodyellow;
+    border-top: 1px solid white;
+    transition: all 1s;
+}
+.edu-qualification ul li h5:hover{
+    border-radius:0px;
+    padding:5px 0px;
+    background-color:rgb(225, 94, 94);
+    color:rgb(73, 234, 237);
+     border-radius:3px;
+}
+.accordion-body.aos-init.aos-animate {
+    background-color:black;
+}
+.carousel.pointer-event {
+    margin-top:55px;
+}
+.carousel-inner img{
+    margin-top:3px;
+}
+.theme-manage{
+    margin-top:57px;
+}
+.theme-work .col-12{
+    padding:0px;
+    margin:0px;
+    width:100%;
+}
+.navbar-toggler-icon {
+        /* color: white; */
+    /* background-color: white; */
+    border-radius: 100%;
+    border: 2px solid rgb(248, 245, 245);
+}
+.about-details li{
+    margin-bottom:12px;
+}
+.about-details li i{
+    padding-right: 7px;
+    font-size: 16px;
+    margin-right: 5px;
+    color: #34b7a7;
+    line-height: 0;
 }
