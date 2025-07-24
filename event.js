@@ -36,7 +36,7 @@ let admissionPopup = document.querySelector('#admissionPopup');
 setTimeout( ()=>{
     admissionPopup.removeAttribute('class');
     admissionPopup.setAttribute('class','admission-popup');
-},1000);
+},3000);
 
 let closePopup = document.querySelector('#closePopup');
     closePopup.addEventListener('click', function(event){
