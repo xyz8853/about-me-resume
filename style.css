@@ -1,3 +1,9 @@
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration-style: none;
+    list-style-type: none;
+    font-weight: 500;
+}
 .navbar-brand{
     color:tomato;
     font-family: math;
@@ -49,12 +55,43 @@
     font-family:'cursive';
     font-size:25px;
 }
+.skill-list li{
+    line-height:31px;
+    list-style:none;
+    padding-left: 31px;
+    padding-top:2px;
+    padding-bottom:2px;
+    transition: all 1s;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+}
+.skill-list li:hover{
+    background-color:darkcyan;
+    color:white;
+    font-weight:500;
+    padding-left:0px;
+    border-radius:2px;
+    border-bottom:1px solid white;
+}
+.project-list{
+    padding-left:0px;
+}
 li{
-
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   text-decoration-style: none;
-   list-style-type: none;
-   font-weight: 500;
+    list-style: none;
+}
+.project-list li{
+    padding:5px 10px;
+    margin-bottom:12px;
+    list-style:none;
+    padding-left: 15px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.project-list li:hover{
+    background-color:darkcyan;
+    color:white;
+    /* font-weight:500; */
+    border-radius:2px;
 }
 .carousel-inner img{
 
@@ -216,23 +253,32 @@ li{
 }
 .row ,.cources-items{
     padding-bottom:10px;
+    /* background-color: #91a6bc; */
 }
 .cources-items .cources-item{
-      border:3px solid white;
-      background-color:#a5aeb8;
+    text-align: center!important;
+    /* border:3px solid white; */
+
+    background-color:#fbfcfd;
+}
+.cources-items .cources-item:hover{
+    background-color:black;
+    color:rgb(252, 236, 197);
 }
 .cources-item img{
-    /* transition: width 3s; */
-    /* transition-delay: 1s; */
-    /* transition: width 2s, height 2s, transform 2s; */
+    border-radius: 100%;
+    width: 250px;
+    height:50vh;
+    text-align: center;
+    justify-content: center;
+    border: 4px solid rgb(0, 0, 0);
+    margin-top:27px;
+    transition: all 1s;
 }
 .cources-item img:hover{
     transition-timing-function: ease-in-out;
-    border-radius:30px;
-    border:2px solid white;
-    transition-duration: .35s;
-    padding:10px;
     cursor:pointer;
+    border: 4px solid rgb(253, 249, 249);
 }
 .slider-paragraph{
     font-weight: 900;
@@ -249,6 +295,7 @@ li{
     transition:all 1s;
     color:lightgoldenrodyellow;
     border-top: 1px solid white;
+    padding-left:31px;
     transition: all 1s;
 }
 .edu-qualification ul li h5:hover{
@@ -291,3 +338,113 @@ li{
     color: #34b7a7;
     line-height: 0;
 }
+.card2{
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+.our-work-row{
+    background-color:#91a6bc;
+    padding-bottom:35px;
+}
+
+/*page popup=========================*/
+.admission{
+    display: none;
+}
+
+.admission-popup{
+    background-color: black;
+    color:white;
+    padding: 20px 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px darkgray;
+    margin-top: 50px;
+    width: 25%;
+    /* height: 50hv; */
+    height: 80vh;
+    text-align: start;
+    margin-left: 70%;
+    position:fixed;
+    justify-content: end;
+    float:inline-end;
+    overflow-y: scroll;
+}
+
+@media (min-width:865px) and (max-width:1085px){
+    .admission-popup{
+        width:25%;
+        margin-left:70%;
+    }
+}
+@media (min-width:559px) and (max-width:865px){
+    .admission-popup{
+        width:40%;
+        margin-left:50%;
+    }
+}
+@media (min-width:400px) and (max-width:559px){
+    .admission-popup{
+        width:70%;
+        margin-left:20%;
+    }
+}
+@media (min-width:250px) and (max-width:400px){
+    .admission-popup{
+        width:100%;
+        margin-left:0%;
+    }
+}
+/* .header .heading{
+    display:block;
+} */
+.header .heading span{
+    color:red;
+    cursor:pointer;
+    transition: all 0.35s;
+    float: right;
+    margin-top: -36px;
+}
+.header .heading  span:hover{
+    color:yellow;
+}
+.header form div{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.header form div input{
+    width:100%;
+    height:35px;
+}
+.header form div button{
+    width: 100%;
+    height: 36px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+
+}
+.header form div button:hover{
+    border-bottom:1px solid white;
+    color:white;
+    font-weight: 400;
+}
+.header form div .submit-btn-popup{
+    background-color: rgb(38, 38, 137);
+    color: #69b5f8b3;
+}
+.header form div .call-btn{
+    background-color: #659308;
+    color: #c2ef68;
+}
+.header form div .whatsapp-btn{
+    background-color: #28a228;
+    color: #67f367;
+}
+/*End page popup  */
