@@ -15,18 +15,32 @@ let windows_icon = document.querySelector('.navbar-toggler-icon');
 
 // qualification hand fontawesome icon design
 let iHand = document.querySelectorAll('.fa-hand-o-right');
-let iNo=1;
+let iNo=0;
 let sId = setInterval( ()=>{
-     iHand.forEach((element)=>{
-        if(iNo%2==0){
-            element.style.color='yellow';
-        }   
-        else{
-            element.style.color='red';
-        }
-     }) 
+    if(iNo==0)
+        iHand[iNo].style.color='yellow';
+    else if(iNo==1)
+        iHand[iNo].style.color='pink';
+    else if(iNo==2)
+        iHand[iNo].style.color='gold';
+    else if(iNo==3)
+        iHand[iNo].style.color='orange';
+    else
+        iHand[iNo].style.color='white';
+    //  iHand.forEach((element)=>{
+        
+    //     // if(iNo%2==0){
+    //     //     element.style.color='yellow';
+    //     // }   
+    //     // else{
+    //     //     element.style.color='red';
+    //     // }
+    //  }) 
     iNo++;
-},1000);
+    if(iNo==5){
+        iNo=0;
+    }
+});
 
 /**page popup */
     
@@ -36,7 +50,7 @@ let admissionPopup = document.querySelector('#admissionPopup');
 setTimeout( ()=>{
     admissionPopup.removeAttribute('class');
     admissionPopup.setAttribute('class','admission-popup');
-},3000);
+},1000);
 
 let closePopup = document.querySelector('#closePopup');
     closePopup.addEventListener('click', function(event){
@@ -118,3 +132,36 @@ let allWork = document.querySelectorAll('.cources-item');
                 clearInterval(id);
           });
     })
+
+// pdf open security password-pdf@123
+
+let originalPassword = 'pdf@123';
+let clickPdf = document.querySelectorAll('#pdf');
+    clickPdf.forEach((element, index)=>{
+        element.addEventListener('click', function(event){
+            let password = prompt("Please Enter the password");
+            if(originalPassword==password){
+                if(index==0)
+                    clickPdf[index].setAttribute('href', 'Result.pdf');
+                else if(index==1)
+                    clickPdf[index].setAttribute('href', 'Result.pdf');
+                else if(index==2)
+                    clickPdf[index].setAttribute('href', 'pk12.pdf');
+                else if(index==3)
+                    clickPdf[index].setAttribute('href', '10pk.pdf');
+                setTimeout(() => {
+                    clickPdf[index].removeAttribute('href');
+                }, 1000);
+            }else{
+                alert('Please Try Again!');
+            }
+        })
+    })
+
+
+    // addEventListener('click', function(event){
+    //     let password = prompt("Please Enter the password");
+    //     if(originalPassword==password){
+    //         clickPdf.setAttribute('href', 'Result.pdf');
+    //     }
+    // })
