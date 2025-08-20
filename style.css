@@ -50,6 +50,15 @@ li {
     font-family:"Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* .img-theme-back{
+    
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center; 
+   background-image: url('pkb33.png');
+   background-attachment: fixed;
+   height:500px;
+} */
 .accordion-button {
     color:white;
     font-family:'cursive';
@@ -198,35 +207,44 @@ li{
     border-radius:100%;
     transition: width 2s, height 2s, transform 2s
 }
-.contact-img:hover{
-    width: 300px;
-    height: 300px;
-    transform: rotate(360deg);
-    cursor:pointer;
-    transition-duration: 4s;
-    border-radius: 0px;
-}
 
-.contact-item i{
-   font-size:20px;
-   border:2px solid black;
-   border-radius: 100%;
-   padding:10px;
-}
 .contact-head .contact-img{
      border:2px solid rgb(11, 2, 2);
      border-radius: 100%;
      padding:10px 10px;
-
+     width:200px;
+     height:200px;
+     transition:all 1s;
 }
+
+.contact-img:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #b7d1f7;
+}
+
 @media (min-width:250px) and (max-width:400px){
     .contact-head .contact-img{
         width:200px;
     }
 }
+.contact-item i{
+   font-size:20px;
+   border:2px solid #0d6efd;
+   border-radius: 100%;
+   padding:10px;
+   /* background-color: #043071; */
+   transition: all 1s;
+}
 .contact-item i:hover{
-    color:red;
-    background-color: pink;
+    transform: rotate(360deg);
+    border-radius:5px;
+    color:#0d6efd;;
+    background-color: #043071;
+    border:2px solid #0d6efd;
 }
 .pdf-button{
      border-radius: 20px;
