@@ -28,6 +28,20 @@ li {
     color: white;
     margin-top:10px;
 }
+@media (min-width:200px) and (max-width:300px){
+    h2,strong{
+        font-size:13px;
+    }
+    .edu-qualification ul li h5{
+        font-size:12px!important;
+    }
+    button{
+        font-size:12px!important;
+    }
+    span{
+        /* font-size:14px; */
+    }
+}
 @media (min-width:300px) and (max-width:991px){
     .collapse .navbar-nav .nav-item .nav-link{
         margin-top: 20px;
@@ -138,7 +152,7 @@ li{
         height: 100%;
     }
  }
- @media (min-width:250px) and (max-width:300px){
+ @media (min-width:200px) and (max-width:300px){
     .img-our-team img{
         width: 100%;
         height: 100%;
@@ -316,10 +330,10 @@ li{
     cursor:pointer;
     border: 4px solid rgb(253, 249, 249);
 }
-@media (min-width:250px) and (max-width:300px){
+@media (min-width:200px) and (max-width:300px){
     .cources-item img{
-        width: 207px;
-        height: 47vh;
+        width:100%;
+        height:50vh;
     }
 }
 .slider-paragraph{
@@ -400,6 +414,15 @@ li{
     color: #34b7a7;
     line-height: 0;
 }
+@media (min-width:200px) and (max-width:300px){
+    .about-details{
+        padding:0px;
+        margin:0px;
+    }
+    .fst-italic{
+        text-align: justify;
+    }
+}
 .card2{
     position: relative;
     flex-direction: column;
@@ -456,7 +479,7 @@ li{
         margin-left:20%;
     }
 }
-@media (min-width:250px) and (max-width:400px){
+@media (min-width:200px) and (max-width:400px){
     .admission-popup{
         width:100%;
         margin-left:0%;
@@ -510,3 +533,33 @@ li{
     color: #67f367;
 }
 /*End page popup  */
+@media (min-width:200px) and (max-width:300px){
+    .model{
+        background-color: black;
+        color:white;
+    }
+    h4,p,h3,ul{
+        color:black;
+    }
+    h1{
+        color:deeppink;
+    }
+    .content p{
+        color:white;
+    }
+    .about-details{
+        color:white;
+    }
+    .about-details li strong{
+        color:lightblue;
+    }
+    .fst-italic{
+        color:antiquewhite!important;
+    }
+    .footer-design ul li{
+        color:bisque;
+    }
+    .footer-option h3{
+        color:antiquewhite;
+    }
+}
