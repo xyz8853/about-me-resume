@@ -42,6 +42,7 @@ li {
         /* font-size:14px; */
     }
 }
+
 @media (min-width:300px) and (max-width:991px){
     .collapse .navbar-nav .nav-item .nav-link{
         margin-top: 20px;
@@ -99,8 +100,9 @@ li {
 .skill-list li{
     cursor:pointer;
 }
-.project-list{
+.project-list li strong{
     padding-left:0px;
+    color:#d81bf5;
 }
 .ablitiy-second{
     color:cyan;
@@ -108,13 +110,16 @@ li {
 li{
     list-style: none;
 }
+.project-list{
+    padding:0px;
+}
 .project-list li{
-    padding:5px 10px;
-    margin-bottom:12px;
+    padding:0px 0px;
+    margin-bottom:2px;
     list-style:none;
-    padding-left: 15px;
+    padding-left:2px;
     padding-top:2px;
-    padding-bottom:2px;
+    padding-bottom:0px;
 }
 .project-list li:hover{
     background-color:darkcyan;
@@ -123,12 +128,12 @@ li{
     border-radius:2px;
 }
 .carousel-inner img{
-
-     width:100%;
+    width:100%;
 }
 
+
 .style-script-regular, h1, h3{
-    font-family:cursive;
+    /* font-family:cursive; */
     font-weight: 600;
     font-style: normal;
   }
@@ -150,6 +155,11 @@ li{
     .img-our-team img{
         width: 100%;
         height: 100%;
+    }
+ }
+  @media (min-width:500px) and (max-width:671px){
+    .img-our-team img{
+        height: 50vh;
     }
  }
  @media (min-width:200px) and (max-width:300px){
@@ -350,8 +360,8 @@ li{
         /* padding-left:0px!important; */
         font-size:15px;
     }
-    .accordion-body .project-list li{
-        font-size:13px;
+    .accordion-body .project-list{
+        font-size:11px;
         padding-left: 0px;
     }
 }

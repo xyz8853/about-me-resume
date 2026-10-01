@@ -70,7 +70,7 @@ let closePopup = document.querySelector('#closePopup');
 
         callBtn.addEventListener('mouseover', function(){
             // callBtn.textContent=' Call Me';
-            callBtn.textContent=' 8853292074';
+            callBtn.textContent=' 7052621058';
             let i = document.createElement('i');
             i.setAttribute('class','fa fa-phone');
             callBtn.prepend(i);
@@ -83,7 +83,7 @@ let closePopup = document.querySelector('#closePopup');
         })
 
         whatsappBtn.addEventListener('mouseover', function(){
-            whatsappBtn.textContent=' 8853292074';
+            whatsappBtn.textContent=' 7052621058';
             let i = document.createElement('i');
             i.setAttribute('class','fa fa-whatsapp');
             whatsappBtn.prepend(i);
